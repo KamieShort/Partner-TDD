@@ -1,36 +1,37 @@
 // IMPORT MODULES under test here:
-import { 
-    addExclamationPoints,
-} from '../functions.js';
-
-const { test, skip } = QUnit;
-
-test('this test should pass', (expect) => {
-    const expected = 'bunny rabbit!!!';
-
-    const actual = addExclamationPoints('bunny rabbit');
-
-    expect.equal(actual, expected);
-});
-
-skip('this test should be skipped', (expect) => {
-    const expected = true;
-
-    const actual = addExclamationPoints;
-
-    expect.equal(actual, expected);
-});
-
 // import { 
-//   multiplyBySeven  ,
+//     addExclamationPoints,
 // } from '../functions.js';
 
-// // const { test, skip } = QUnit;
+// const { test, skip } = QUnit;
 
 // test('this test should pass', (expect) => {
+//     const expected = 'bunny rabbit!!!';
+
+//     const actual = addExclamationPoints('bunny rabbit');
+
+//     expect.equal(actual, expected);
+// });
+
+// skip('this test should be skipped', (expect) => {
 //     const expected = true;
 
-//     const actual = myFunction();
+//     const actual = true;
+
+//     expect.equal(actual, expected);
+// });
+
+// import { 
+//     multiplyBySeven,
+// } from '../functions.js';
+
+// const { test, skip } = QUnit;
+
+// test('this test should pass', (expect) => {
+//     const expected = 35;
+//     // const expected = 28;
+
+//     const actual = multiplyBySeven(5);
 
 //     expect.equal(actual, expected);
 // });
@@ -48,12 +49,12 @@ skip('this test should be skipped', (expect) => {
 //     multiplyBy12ThenHalve,
 // } from '../functions.js';
 
-// // const { test, skip } = QUnit;
+// const { test, skip } = QUnit;
 
 // test('this test should pass', (expect) => {
-//     const expected = true;
+//     const expected = 10;
 
-//     const actual = myFunction();
+//     const actual = multiplyBy12ThenHalve(8, 4, 5);
 
 //     expect.equal(actual, expected);
 // });
