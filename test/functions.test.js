@@ -104,15 +104,41 @@
         //     expect.equal(actual, expected);
         // });
 
+// import {
+//     returnAsAString,
+// } from '../functions.js';
+
+// const { test, skip } = QUnit;
+
+// test ('this test should pass', (expect) => {
+//     const expected = '845';
+//     const actual = returnAsAString(8, 4, 5);
+
+//     expect.equal(actual, expected);
+// });
+
+// import {
+//     makeLuckyGreeting,
+// } from '../functions.js';
+
+// const { test, skip } = QUnit;
+
+// test ('this test should pass', (expect) => {
+//     const expected = 'Hello! Your lucky number for the day is 12.';
+//     const actual = makeLuckyGreeting(8,4);
+
+//     expect.equal(actual, expected);
+// });
+
 import {
-    returnAsAString,
+    getSecondItem,
 } from '../functions.js';
 
 const { test, skip } = QUnit;
 
 test ('this test should pass', (expect) => {
-    const expected = '845';
-    const actual = returnAsAString(8, 4, 5);
+    const expected = 'apple';
+    const actual = getSecondItem(['kiwi', 'apple', 'orange', 'plum']);
 
-    expect.equal(actual, expected);
+    expect.deepEqual(actual, expected);
 });
