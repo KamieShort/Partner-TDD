@@ -47,8 +47,8 @@ Output:
 
 */
 
-export function multiplyBy12ThenHalve(num1, num2, num3) {
-    return (num1 / num2) * num3;
+export function multiplyByTwelveThenHalve(num) {
+    return (num * 12) / 2;
 }
 
 
@@ -63,16 +63,9 @@ Output:
 
 10 (because 8 divided by 4 is 2, times 5 is 10)
 */
-
-export function divideThenMultiply(firstNumber, secondNumber, thirdNumber) {
-    const array = [firstNumber];
-    array.push (4, 5);
-    return array;
-
-    return [firstNumber, secondNumber, thirdNumber]
+export function divideThenMultiply(num1, num2, num3) {
+    return (num1 / num2) * num3;
 }
-
-
 // This function should take in three numbers and return those numbers in an array
 
 /* 
@@ -84,10 +77,12 @@ Output:
 
 [8, 4, 5]
 */
-
 export function returnAsAnArray(firstNumber, secondNumber, thirdNumber) {
-    return true;
+
+    return [firstNumber, secondNumber, thirdNumber];
 }
+
+
 
 // This function should take in three numbers and return those numbers mushed together as a string
 
@@ -102,7 +97,7 @@ Output:
 */
 
 export function returnAsAString(firstNumber, secondNumber, thirdNumber) {
-    return true;
+    return `${firstNumber}${secondNumber}${thirdNumber}`;
 }
 
 // This function should take in two numbers and return a greeting announcing that the sum of those numbers is today's lucky number
@@ -118,7 +113,7 @@ Output:
 */
 
 export function makeLuckyGreeting(firstNumber, secondNumber) {
-    return true;
+    return 'Hello! Your lucky number for the day is ' + (firstNumber + secondNumber);
 }
 
 // This function should take an array and return the second item in the array

@@ -46,7 +46,21 @@
 // });
 
 // import { 
-//     multiplyBy12ThenHalve,
+//     multiplyByTwelveThenHalve,
+// } from '../functions.js';
+
+// const { test, skip } = QUnit;
+
+// test('this test should pass', (expect) => {
+//     const expected = 24;
+
+//     const actual = multiplyByTwelveThenHalve(24);
+
+//     expect.equal(actual, expected);
+// });
+
+// import { 
+//     divideThenMultiply,
 // } from '../functions.js';
 
 // const { test, skip } = QUnit;
@@ -54,7 +68,7 @@
 // test('this test should pass', (expect) => {
 //     const expected = 10;
 
-//     const actual = multiplyBy12ThenHalve(8, 4, 5);
+//     const actual = divideThenMultiply(8, 4, 5);
 
 //     expect.equal(actual, expected);
 // });
@@ -68,16 +82,37 @@
 //     expect.equal(actual, expected);
 // });
 
-import { 
-        divideThenMultiply,
-    } from '../functions.js';
+// import { 
+    //     returnAsAnArray,
+    // } from '../functions.js';
     
-    const { test, skip } = QUnit;
+    // const { test, skip } = QUnit;
     
-    test('this test should pass', (expect) => {
-        const expected = [8, 4, 5];
-       
-        const actual = divideThenMultiply(8, 4, 5);
-    
-        expect.deepequal(actual, expected);
-    });
+    // test('this test should pass', (expect) => {
+        //     const expected = [8, 4, 5];
+        
+        //     const actual = divideThenMultiply(8, 4, 5);
+        
+        //     expect.deepEqual(actual, expected);
+        // });
+
+// skip('this test should be skipped', (expect) => {
+        //     const expected = true;
+        
+        //     const actual = true;
+        
+        //     expect.equal(actual, expected);
+        // });
+
+import {
+    returnAsAString,
+} from '../functions.js';
+
+const { test, skip } = QUnit;
+
+test ('this test should pass', (expect) => {
+    const expected = '845';
+    const actual = returnAsAString(8, 4, 5);
+
+    expect.equal(actual, expected);
+});
