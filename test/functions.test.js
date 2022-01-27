@@ -67,3 +67,17 @@
 
 //     expect.equal(actual, expected);
 // });
+
+import { 
+        divideThenMultiply,
+    } from '../functions.js';
+    
+    const { test, skip } = QUnit;
+    
+    test('this test should pass', (expect) => {
+        const expected = [8, 4, 5];
+       
+        const actual = divideThenMultiply(8, 4, 5);
+    
+        expect.deepequal(actual, expected);
+    });

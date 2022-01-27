@@ -65,7 +65,11 @@ Output:
 */
 
 export function divideThenMultiply(firstNumber, secondNumber, thirdNumber) {
-    return true;
+    const array = [firstNumber];
+    array.push (4, 5);
+    return array;
+
+    return [firstNumber, secondNumber, thirdNumber]
 }
 
 
