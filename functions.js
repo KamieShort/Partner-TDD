@@ -147,7 +147,8 @@ Output:
 */
 
 export function getLastItem(array) {
-    return true;
+    let last = array[array.length - 1];
+    return last;
 }
 
 // Bonus question:
